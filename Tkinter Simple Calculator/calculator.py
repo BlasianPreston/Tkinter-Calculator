@@ -21,17 +21,10 @@ voice = pygame.mixer.Channel(5)
 
 # Define the buttons for Shirou and Ichigo
 def play_shiroutheme():
-    voice.play(shirou_theme)
-    info = Image.open("emiya-shirou-fate-stay-night.gif")
-    frames = info.n_frames
-    im = [tkinter.PhotoImage(file="emiya-shirou-fate-stay-night.gif", format=f'gif - index{i}') for i in range(frames)]
-        
+    voice.play(shirou_theme) 
 
 def play_ichigotheme():
     voice.play(ichigo_theme)
-    info = Image.open("emiya-shirou-fate-stay-night.gif")
-    frames = info.n_frames
-    im = [tkinter.PhotoImage(file="ichigo-kurosaki-4k.gif", format=f"gif-index{i}") for i in range(frames)]
 
 e = Entry(root, width=50, borderwidth=5)
 e.grid(row=0, column=1, columnspan=3,)
